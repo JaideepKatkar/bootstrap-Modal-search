@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/searchContent.js"></script>
+</head>
+<body>
+
+  <!-- Trigger the modal with a button -->
+  <div align="center">
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Search Demo Modal
+      </button>
+  </div>
+
+  <div class="container">
+  <!-- Modal -->
+   <div class="modal fade" id="myModal" role="dialog" >
+     <div class="modal-dialog">
+
+       <!-- Modal content-->
+       <div class="modal-content">
+         <div class="modal-body">
+          <div class="panel-body">
+            <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for Company Name.." title="Type in a name">
+              <table id="searchTable">
+                <tr class="header">
+                  <th style="width:5%;">Founded</th>
+                  <th style="width:5%;">Company Name</th>
+                  <th style="width:15%;">Founder</th>
+                  <th style="width:20%;">HQ</th>
+                  <th style="width:20%;">Wiki Page</th>
+
+                </tr>
+                <tr>
+                  <td>January 1996</td>
+                  <td>Google Inc</td>
+                  <td>Larry Page, Sergey Brin</td>
+                  <td>Googleplex, Mountain View, California, U.S.A </td>
+                  <td>https://en.wikipedia.org/wiki/Google</td>
+                </tr>
+                <tr>
+                  <td>June 16, 1977</td>
+                  <td>Oracle Corporation</td>
+                  <td>Larry Ellison, Bob Miner, Ed Oates</td>
+                  <td>Redwood Shores, Redwood City, California, U.S.A </td>
+                  <td>https://en.wikipedia.org/wiki/Oracle_Corporation</td>
+                </tr>
+                <tr>
+                  <td>June 16, 1911</td>
+                  <td>IBM</td>
+                  <td>Charles Ranlett Flint</td>
+                  <td>Armonk, New York, U.S.A</td>
+                  <td>https://en.wikipedia.org/wiki/IBM</td>
+                </tr>
+                <tr>
+                  <td>April 1, 1976</td>
+                  <td>Apple Inc</td>
+                  <td>Steve Jobs, Steve Wozniak,Ronald Wayne</td>
+                  <td>Apple Campus, Cupertino, California, U.S.A</td>
+                  <td>https://en.wikipedia.org/wiki/Apple_Inc</td>
+                </tr>
+                <tr>
+                  <td>February 4, 2004</td>
+                  <td>Facebook Inc</td>
+                  <td>Mark Zuckerberg, Eduardo Saverin, Andrew McCollum, Dustin Moskovitz,Chris Hughes</td>
+                  <td>Menlo Park, California, U.S.A</td>
+                  <td>https://en.wikipedia.org/wiki/Facebook</td>
+                </tr>
+                <tr>
+                  <td>July 5, 1994</td>
+                  <td>Amazon Inc</td>
+                  <td>Jeff Bezos</td>
+                  <td>Seattle, Washington, U.S.A</td>
+                  <td>https://en.wikipedia.org/wiki/Amazon.com</td>
+                </tr>
+                <tr>
+                  <td>1845</td>
+                  <td>Deloitte</td>
+                  <td>William Welch Deloitte</td>
+                  <td>30 Rockefeller Plaza, New York City, New York, United States</td>
+                  <td>https://en.wikipedia.org/wiki/Deloitte</td>
+                </tr>
+                <tr>
+                  <td>July 1, 2003</td>
+                  <td>Tesla, Inc</td>
+                  <td>Elon Musk, JB Straubel, Martin Eberhard, Marc Tarpenning, Ian Wright</td>
+                  <td>Palo Alto, California, U.S.A</td>
+                  <td>https://en.wikipedia.org/wiki/Tesla,_Inc.</td>
+                </tr>
+              </table>
+          </div>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+</body>
+</html>
